@@ -6,3 +6,13 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.image {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 10%;
+ margin-top: 190px;
+ }
+ h1,h2{
+  text-align: center;
+ }
