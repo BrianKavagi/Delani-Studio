@@ -1,8 +1,8 @@
  /* Container holding the image and the text */
 .container {
-  position: relative;
+  position: absolute;
   text-align: center;
-  color: white;
+  color: black;
 }
 /* Centered text */
 .centered {
@@ -18,16 +18,14 @@
  width: 15%;
  margin-top: 100px
  }
- h1,h2,p,h3{
+ h1,h2,p,h3,h4,h5{
   text-align: center;
  }
  .photo {
-   no margin;
    width:1255px;
    height:900px;
  }
  .mac {
-   no margin;
    width:1255px;
    height:300px;
  }
