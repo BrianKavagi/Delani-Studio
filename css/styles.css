@@ -25,7 +25,9 @@ p,h1,h2,h3,h4 {
    width:1255px;
    height:900px;
  }
- .Contact {
-   width:1255px;
-   height:500px;
+ .contact {
+   background-image: url(/home/student/Desktop/IP3/assets/backgrounds/c_image.jpg);
+   background-size: 100%;
+   margin-bottom: 0%;
+   height: 500px;
  }
