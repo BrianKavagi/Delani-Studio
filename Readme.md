@@ -9,7 +9,7 @@
 
 ## Setup/Installation Requirements
 * git clone
-* cd Delani-Studio
+* cd IP3
 * Open index.html from a browser
 
 ## Technologies Used
