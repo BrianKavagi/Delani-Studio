@@ -6,20 +6,20 @@ $(document).ready(function () {
     });
  });
  $(document).ready(function () {
-    $("#development").show();
+    $("#development img").show();
     $("#development").click(function () {
         $("#development p").toggle();
  
     });
  });
  $(document).ready(function () {
-    $("#product").show();
+    $("#product img").show();
     $("#product").click(function () {
         $("#product p").toggle();
  
     });
  });
- /$(document).ready(function() {
+ $(document).ready(function() {
     $('.textOne').hide();
     $('.imageOne').animate({
         opacity:1
