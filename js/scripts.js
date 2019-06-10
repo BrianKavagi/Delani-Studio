@@ -1,21 +1,36 @@
 $(document).ready(function () {
-    $(".WHAT WE DO p").hide();
- 
-    $("/home/student/Desktop/IP3/assets/services_icons/design_icon.png").click(function () {
-        $(".p1").toggle();
- 
-    });
- });
- 
- $(document).ready(function () {
-    $("/home/student/Desktop/IP3/assets/services_icons/dev_icon.png").click(function () {
-        $(".p2").toggle();
+    $("#design img").show();
+    $("#design").click(function () {
+        $("#design p").toggle();
  
     });
  });
  $(document).ready(function () {
-    $("/home/student/Desktop/IP3/assets/services_icons/product_icon.png").click(function () {
-        $(".p3").toggle();
+    $("#development").show();
+    $("#development").click(function () {
+        $("#development p").toggle();
  
     });
  });
+ $(document).ready(function () {
+    $("#product").show();
+    $("#product").click(function () {
+        $("#product p").toggle();
+ 
+    });
+ });
+ /$(document).ready(function() {
+    $('.textOne').hide();
+    $('.imageOne').animate({
+        opacity:1
+ 
+    });
+ 
+    $('.imageOne').hover(function() {
+        $(this).stop().animate({opacity:.4},200);
+        $('.textOne').fadeIn();
+ 
+    }, function() {
+        $(this).stop().animate({opacity:1},500)
+        $('.textOne').fadeOut();
+    });
