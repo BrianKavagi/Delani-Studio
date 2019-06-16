@@ -34,3 +34,6 @@ $(document).ready(function () {
         $(this).stop().animate({opacity:1},500)
         $('.textOne').fadeOut();
     });
+    $(document).ready(function() {
+        $("form#").submit(function(event) {
+        event.preventDefault();
