@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MOVIES</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Oswald" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/scripts.js"></script>
+   <ul class="nav justify-content-end bg-blue color-text-secondary mr-6">
+
+    <li class="nav-item">
+      <a class="nav-link  bg-info text-white" href="#aboutUs" target="_blank">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link  bg-info text-white" href="music.html" target="_blank">Music</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link  bg-info text-white" href="icast.html" target="_blank">Icasts</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link  bg-info text-white" href="movies.html" target="_blank"> Movies</a>
+    <li class="nav-item">
+      <a class="nav-link  bg-info text-white" href="games.html" target="_blank"> Games</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link  bg-info text-white" href="books.html" target="_blank">Books</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link  bg-info text-white" href="#contact" target="_blank">Contact Us</a>
+    </li>
+  </ul>
+</head>
+<style>
+  body{
+   padding: 0;
+   margin: 0;
+   background-image: url(images/Movie7.jpeg);
+   background-position: center;
+   background-repeat: repeat;
+   background-attachment: fixed;
+   height: 200px;
+   width: 100%;
+ }
+ .movie17 {
+   height: 300px;
+   width: 45%;
+ }
+ .movie18 {
+   height: 300px;
+   width: 50%;
+ }
+ .movie16 {
+   height: 300px;
+   width: 50%;
+ }
+ .movie15 {
+   height: 300px;
+   width: 45%;
+ }
+ .movie14 {
+   height: 400px;
+   width: 45%;
+ }
+ .movie13 {
+   height: 400px;
+   width: 50%;
+ }
+ h1,p,h2,label,button {
+   color: white;
+ }
+ </style>
+
+<body>
+   <div class="container-fluid">
+      <h1><strong>MOVIES </strong></h1>
+      <p>WELCOME TO THE MOVIES SECTION.</p>
+    <div class="row">
+      <img src="images/Movie18.jpeg" class="movie18">
+      <img src="images/Movie17.png" class="movie17">
+    </div>
+    <div class="row">
+      <img src="images/Movie16.jpg" class="movie16">
+      <img  src="images/Movie15.jpg" class="movie15">
+    </div>
+    <div class="row">
+      <img  src="images/Movie14.jpg" class="movie14">
+      <img  src="images/Movie13.jpg" class="movie13">
+    </div>
+   <h2><strong>KINDLY FILL IN THE FORM BELOW TO KNOW WHICH KINDS OF MOVIES YOU PREFER:</strong></h2>
+  </div>
+  <div id="blanks">
+      <form id="form">
+         <div class="form-group">
+            <label for="firstname">FIRST NAME: </label> 
+            <input id="firstname" class="form-control" type="text">
+         </div>
+         <div class="form-group">
+            <label for="secondname">SECOND NAME:</label>
+            <input id="secondname" class="form-control" type="text">
+         </div>
+         <div class="form-group">
+            <label for="gender">GENDER:</label>
+            <select class="form-control" id="gender">
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+         </div>
+         <div class="form-group">
+            <label for="genre">WHICH GENRE DO YOU LIKE:</label>
+            <select class="form-control" id="genre">
+                <option>Action</option>
+                <option>Sci-FI</option>
+                <option>Comedy</option>
+                <option>Drama</option>
+              </select>
+         </div>
+         <div class="form-group">
+            <label for="mood">MOOD: select [Happy,Sad,Thrilled,Sombre,Peaceful,Romance]</label>
+          <input type="text" class="form-control" id="mood">
+         </div>
+         <div class="form-group">
+            <label for="email">EMAIL ADDRESS:</label>
+            <input id="email" class="form-control" type="text">
+         </div>
+         <input type="button" id="submit" class="btn btn-primary" value="SUGGESTIONS" style="color: aliceblue!important">
+      </form>
+    <div id="SUGGESTIONS" >
+     <div id="gender">
+    </div>
+    </div>
+<script>
+
+  $(document).ready(function() {
+      $("#submit").click(function(event) {
+        var firstnameInput = $("input#firstname").val();
+        var secondnameInput = $("input#secondname").val();
+        var genderInput = $("input#gender").val();
+        var genreInput = $("input#genre").val();
+        var moodInput = $("input#mood").val();
+        var emailInput = $("input#email").val()
+     if (moodInput=="Happy") {
+     alert("Angel Has Fallen, Hobbs and Shaw, Captain Marvel, Shazam!");
+     }else if(moodInput=="Sad"){
+      alert("How i met your mother");
+     }else if(moodInput=="Thrilled"){
+      alert("Avengers");
+     }
+     else if(moodInput=="Peaceful"){
+       alert("42 UNits");
+     }else if(moodInput=="Sombre"){
+      alert("Heist");
+     }else if(moodInput=="Romance"){
+      alert("Kissing Booth");
+     }
+     else{
+      alert("select correct mood");  
+     }
+     ("#form")[0].reset();
+         });
+     }); 
+         
+</script>
+ </body>
+</html>
